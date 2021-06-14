@@ -5,11 +5,21 @@
       <p>Currently showing bios written by:</p>
       <form>
         <label :class="currentWriter === 'jason' && 'active'">
-          <input type="radio" name="writer" :checked="currentWriter === 'jason'" @change="toggleWriter" />
+          <input
+            type="radio"
+            name="writer"
+            :checked="currentWriter === 'jason'"
+            @change="toggleWriter"
+          />
           Jason
         </label>
         <label :class="currentWriter === 'sarah' && 'active'">
-          <input type="radio" name="writer" :checked="currentWriter === 'sarah'" @change="toggleWriter" />
+          <input
+            type="radio"
+            name="writer"
+            :checked="currentWriter === 'sarah'"
+            @change="toggleWriter"
+          />
           Sarah
         </label>
       </form>
@@ -45,7 +55,8 @@ export default {
             Simple ingredients, classic flavors, and no bullshit.
           `,
           image: '/images/jason-by-jason.jpg',
-          imageAlt: 'Jason Lengstorf with an apron and a winning smile. A speech bubble for him says, “I eat burgers for breakfast. Literally.”',
+          imageAlt:
+            'Jason Lengstorf with an apron and a winning smile. A speech bubble for him says, “I eat burgers for breakfast. Literally.”',
         },
         sarah: {
           bio: `
@@ -53,7 +64,8 @@ export default {
             taste better when you do weird shit to them.
           `,
           image: '/images/sarah-by-jason.jpg',
-          imageAlt: 'Sarah Drasner holding her hand up with fingers close together signifying something small. A speech bubble for her says, “This is how big my chances of winning are.”',
+          imageAlt:
+            'Sarah Drasner holding her hand up with fingers close together signifying something small. A speech bubble for her says, “This is how big my chances of winning are.”',
         },
       },
       sarah: {
@@ -62,16 +74,18 @@ export default {
             Jason Lengstorf is a smooshy boi.
           `,
           image: '/images/jason-by-sarah.jpg',
-          imageAlt: 'Jason Lengstorf with an apron and a winning smile. A speech bubble for him says, “I eat burgers for breakfast. Literally.”',
+          imageAlt:
+            'Jason Lengstorf with an apron and a winning smile. A speech bubble for him says, “I eat burgers for breakfast. Literally.”',
         },
         sarah: {
           bio: `
             Sarah Drasner knows the power of the meat bath.
           `,
           image: '/images/sarah-by-sarah.jpg',
-          imageAlt: 'Sarah Drasner holding her hand up with fingers close together signifying something small. A speech bubble for her says, “This is how big my chances of winning are.”',
+          imageAlt:
+            'Sarah Drasner holding her hand up with fingers close together signifying something small. A speech bubble for her says, “This is how big my chances of winning are.”',
         },
-      }
+      },
     };
 
     const defaultCurrentWriter = 'jason';
@@ -86,9 +100,9 @@ export default {
     toggleWriter() {
       this.currentWriter = this.currentWriter === 'jason' ? 'sarah' : 'jason';
       this.details = this.allDetails[this.currentWriter];
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -123,7 +137,7 @@ label.active {
   color: #422002;
 }
 
-input[type=radio] {
+input[type='radio'] {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;

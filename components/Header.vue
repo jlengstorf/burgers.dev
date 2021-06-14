@@ -1,13 +1,13 @@
 <template>
-    <header>
-      <NuxtLink to="/" rel="home" title="Home">
-        <Logo />
-      </NuxtLink>
-      <nav>
-        <NuxtLink to="/contenders">The Contenders</NuxtLink>
-        <NuxtLink to="/burgers">The Burgers</NuxtLink>
-      </nav>
-    </header>
+  <header>
+    <NuxtLink to="/" rel="home" title="Home">
+      <Logo />
+    </NuxtLink>
+    <nav>
+      <NuxtLink to="/contenders">The Contenders</NuxtLink>
+      <NuxtLink to="/burgers">The Burgers</NuxtLink>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -25,7 +25,7 @@ header {
   width: 90vw;
 }
 
-a[rel=home] {
+a[rel='home'] {
   display: block;
   transition: 150ms all linear;
   width: 200px;

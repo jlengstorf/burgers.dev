@@ -18,7 +18,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bangers&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Bangers&display=swap',
       },
       {
         rel: 'apple-touch-icon',
@@ -74,7 +74,8 @@ export default {
       },
       {
         name: 'og:description',
-        content: 'Sarah Drasner & Jason Lengstorf face off in an epic excuse to feed their friends lots of burgers while talking shit to each other.',
+        content:
+          'Sarah Drasner & Jason Lengstorf face off in an epic excuse to feed their friends lots of burgers while talking shit to each other.',
       },
       {
         name: 'og:image',
@@ -82,9 +83,10 @@ export default {
       },
       {
         name: 'og:image:alt',
-        content: 'A burger with crossed spatulas below it and the text, "Who will be the burger champ, and who will the burger chump?"'
+        content:
+          'A burger with crossed spatulas below it and the text, "Who will be the burger champ, and who will the burger chump?"',
       },
-    ]
+    ],
   },
 };
 </script>
@@ -100,7 +102,8 @@ export default {
 html {
   background-color: #110800;
   color: #b59274;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 18px;
   line-height: 1.45;
 }
