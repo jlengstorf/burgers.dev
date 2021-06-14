@@ -136,4 +136,13 @@ h6 {
   font-family: Bangers, sans-serif;
   line-height: 1.1;
 }
+
+a {
+  color: #70df00;
+}
+
+a:hover,
+a:focus {
+  color: #ffd600;
+}
 </style>
