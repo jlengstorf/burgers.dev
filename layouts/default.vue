@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header v-if="$nuxt.$route.path !== '/'" />
     <main>
       <Nuxt />
     </main>
@@ -8,8 +9,16 @@
 
 <script>
 export default {
+  data() {
+    return {
+      home: this.home,
+    };
+  },
   head: {
     title: 'Burger Showdown: Splash vs. Smash',
+    htmlAttrs: {
+      lang: 'en',
+    },
     link: [
       {
         rel: 'preconnect',

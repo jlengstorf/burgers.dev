@@ -12,7 +12,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: {
+    home: true,
+  },
+};
 </script>
 
 <style scoped>

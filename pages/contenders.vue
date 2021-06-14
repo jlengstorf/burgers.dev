@@ -45,7 +45,6 @@
 
 <script>
 export default {
-  layout: 'page',
   data() {
     const details = {
       jason: {
