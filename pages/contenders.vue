@@ -1,7 +1,6 @@
 <template>
   <div>
-    <header>
-      <h1>The Contenders</h1>
+    <PageHeader title="The Contenders">
       <p>Currently showing bios written by:</p>
       <form>
         <label :class="currentWriter === 'jason' && 'active'">
@@ -23,7 +22,7 @@
           Sarah
         </label>
       </form>
-    </header>
+    </PageHeader>
     <section class="contenders">
       <div class="contender">
         <img :src="details.sarah.image" :alt="details.sarah.imageAlt" />
@@ -105,14 +104,6 @@ export default {
 </script>
 
 <style scoped>
-header {
-  text-align: center;
-}
-
-h1 {
-  font-size: clamp(2.25rem, 15vw, 4rem);
-}
-
 form {
   display: block;
   margin-top: 0.25rem;
