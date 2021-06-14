@@ -73,7 +73,7 @@ export default {
       },
       {
         name: 'og:description',
-        content: 'Sarah Drasner and Jason Lengstorf face off in an epic excuse to feed their friends lots of cheeseburgers while talking shit to each other.',
+        content: 'Sarah Drasner & Jason Lengstorf face off in an epic excuse to feed their friends lots of burgers while talking shit to each other.',
       },
       {
         name: 'og:image',
