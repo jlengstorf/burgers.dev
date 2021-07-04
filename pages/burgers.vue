@@ -1,7 +1,6 @@
 <template>
   <div>
     <PageHeader title="The Burgers">
-      <p>Two burgers enter! One burger wins! All burgers are eaten!</p>
       <form>
         <label :class="currentBurger === 'smash' && 'active'">
           <input
@@ -54,11 +53,6 @@ export default {
 .burger-chart {
   background: #fff5dc;
 }
-
-.burger-chart svg {
-  height: auto;
-  max-width: 100%;
-}
 </style>
 
 <style scoped>
@@ -100,7 +94,7 @@ input[type='radio'] {
 }
 
 h2 {
-  font-size: clamp(1.75rem, 10vw, 3rem);
+  font-size: clamp(1.25rem, 8vw, 2.5rem);
   text-align: center;
 }
 </style>

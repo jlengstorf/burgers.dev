@@ -22,7 +22,13 @@
           Sarah
         </label>
       </form>
-    </PageHeader>
+      <p v-if="currentWriter === 'sarah'">
+        (<strong>NOTE:</strong> Sarah has not had time to actually write bios,
+        so we fed her Twitter into a machine learning algorithm and this is what
+        came out.)
+      </p></PageHeader
+    >
+
     <section class="contenders">
       <div class="contender">
         <img :src="details.sarah.image" :alt="details.sarah.imageAlt" />
@@ -59,7 +65,7 @@ export default {
         sarah: {
           bio: `
             Sarah Drasner believes (incorrectly) that burgers
-            taste better when you do weird shit to them.
+            taste better when you do weird shit like putting them in the bath.
           `,
           image: '/images/sarah-by-jason.jpg',
           imageAlt:
@@ -69,7 +75,7 @@ export default {
       sarah: {
         jason: {
           bio: `
-            Jason Lengstorf is a smooshy boi.
+            Jason Lengstorf, a.k.a. smooshburgerboi, is a doodie head and his beard sucks.
           `,
           image: '/images/jason-by-sarah.jpg',
           imageAlt:
@@ -77,7 +83,7 @@ export default {
         },
         sarah: {
           bio: `
-            Sarah Drasner knows the power of the meat bath.
+            Sarah Drasner knows the power of the meat bath. All hail the meat bath!
           `,
           image: '/images/sarah-by-sarah.jpg',
           imageAlt:
@@ -110,6 +116,7 @@ form {
 }
 
 label {
+  border: 4px solid transparent;
   border-radius: 0.5rem;
   display: inline-block;
   font-size: 1rem;
@@ -123,8 +130,20 @@ label {
 
 label.active {
   background: #ffb905;
-  border: 4px solid #ecab05;
+  border-color: #ecab05;
   color: #422002;
+}
+
+label:hover,
+label.active:hover {
+  cursor: pointer;
+  border-color: #ecab05;
+}
+
+label:focus-within,
+label.active:focus-within {
+  outline: 2px solid #70df00;
+  outline-offset: 4px;
 }
 
 input[type='radio'] {

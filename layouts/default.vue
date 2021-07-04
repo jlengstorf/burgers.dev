@@ -4,6 +4,17 @@
     <main>
       <Nuxt />
     </main>
+
+    <footer>
+      <p>
+        built with <span role="img" aria-label="burger">🍔</span> by
+        <a href="https://jason.af">Jason Lengstorf</a> ·
+        <a href="https://github.com/jlengstorf/burgers.dev">source code</a> ·
+        <a href="https://twitter.com/sarah_edo/status/1197721256100909056"
+          >Sarah started it</a
+        >
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -121,9 +132,15 @@ body * + * {
 }
 
 main {
-  margin: 5rem auto;
+  margin: 2rem auto;
   max-width: calc(500px + 4rem);
   width: 90vw;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin-top: 5rem;
+  }
 }
 
 h1,
@@ -144,5 +161,16 @@ a {
 a:hover,
 a:focus {
   color: #ffd600;
+}
+
+footer {
+  margin: 4rem auto 2rem;
+  max-width: 90vw;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: inherit;
 }
 </style>

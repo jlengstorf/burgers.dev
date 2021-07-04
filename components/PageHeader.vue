@@ -19,6 +19,6 @@ header {
 }
 
 h1 {
-  font-size: clamp(2.25rem, 15vw, 4rem);
+  font-size: clamp(1.75rem, 12vw, 3rem);
 }
 </style>
