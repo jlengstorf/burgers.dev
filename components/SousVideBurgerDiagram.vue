@@ -86,13 +86,90 @@
 <script>
 import gsap from 'gsap';
 
-export default {};
+export default {
+  methods: {
+    burgerIntro() {
+      gsap
+        .timeline({
+          defaults: {
+            ease: 'bounce.out',
+            duration: 1.5,
+            delay: 0.5,
+          },
+        })
+        .add('start')
+        .from(
+          '.burger img:nth-child(7)',
+          {
+            rotation: -10,
+            y: -10,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(6)',
+          {
+            rotation: -15,
+            y: -45,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(5)',
+          {
+            rotation: -10,
+            x: 10,
+            y: -120,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(4)',
+          {
+            rotation: -5,
+            x: -10,
+            y: -150,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(3)',
+          {
+            rotation: 5,
+            y: -200,
+            opacity: 0.8,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(2)',
+          {
+            rotation: 5,
+            y: -250,
+          },
+          'start',
+        )
+        .from(
+          '.burger img:nth-child(1)',
+          {
+            rotation: 5,
+            opacity: 0.8,
+            y: -300,
+          },
+          'start',
+        );
+    },
+  },
+  mounted() {
+    this.burgerIntro();
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .burger-container {
   position: relative;
-  height: 1200px;
+  height: 800px;
   width: 100%;
   background: linear-gradient(
     179deg,

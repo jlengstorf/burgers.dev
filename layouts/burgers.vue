@@ -1,22 +1,12 @@
 <template>
   <div>
-    <Header v-if="$nuxt.$route.path !== '/'" />
-    <main>
+    <Header />
+    <main class="burgercontain">
       <Nuxt />
     </main>
     <AppFooter />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      home: this.home,
-    };
-  },
-};
-</script>
 
 <style>
 *,
@@ -39,9 +29,9 @@ body * + * {
   margin-top: 1rem;
 }
 
-main {
+main.burgercontain {
   margin: 2rem auto;
-  max-width: calc(500px + 4rem);
+  max-width: calc(1000px + 4rem);
   width: 90vw;
 }
 

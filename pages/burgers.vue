@@ -37,6 +37,7 @@
 
 <script>
 export default {
+  layout: 'burgers',
   data() {
     return {
       currentBurger: 'smash',

@@ -338,7 +338,7 @@
   position: relative;
   height: 0;
   padding-bottom: 52.35%;
-  width: 100%;
+  width: 500px;
 }
 
 @media (min-width: 600px) {
