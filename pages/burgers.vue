@@ -2,23 +2,23 @@
   <div>
     <PageHeader title="The Burgers">
       <form>
-        <label :class="currentBurger === 'smash' && 'active'">
+        <label :class="currentBurger === 'smash' && 'active'" for="smash">
           <input
+            v-model="currentBurger"
+            value="smash"
             type="radio"
-            name="burger"
-            :checked="currentBurger === 'smash'"
-            @change="toggleBurger"
+            id="smash"
           />
           Smashburger
         </label>
-        <label :class="currentBurger === 'splash' && 'active'">
+        <label :class="currentBurger === 'sousvide' && 'active'" for="sousvide">
           <input
+            v-model="currentBurger"
+            value="sousvide"
             type="radio"
-            name="burger"
-            :checked="currentBurger === 'splash'"
-            @change="toggleBurger"
+            id="sousvide"
           />
-          Splashburger
+          Sous Vide Burger
         </label>
       </form>
     </PageHeader>
@@ -27,9 +27,9 @@
       <SmashBurger />
     </section>
 
-    <section v-if="currentBurger === 'splash'" class="burger-display">
-      <h2>The Splashburger</h2>
-      <SplashBurger />
+    <section v-if="currentBurger === 'sousvide'" class="burger-display">
+      <h2>The Sous Vide Burger</h2>
+      <SousVideBurger />
     </section>
   </div>
 </template>
@@ -40,11 +40,6 @@ export default {
     return {
       currentBurger: 'smash',
     };
-  },
-  methods: {
-    toggleBurger() {
-      this.currentBurger = this.currentBurger === 'smash' ? 'splash' : 'smash';
-    },
   },
 };
 </script>
