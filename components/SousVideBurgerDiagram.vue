@@ -1,6 +1,6 @@
 <template>
   <div class="burger-container">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006.8 639.2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 1006.8 670">
       <g opacity=".83">
         <path
           class="cls-2"
@@ -169,14 +169,8 @@
         font-size="48"
         fill="#fff"
       >
-        Gril
-        <tspan x="63.4" y="0" letter-spacing="-.04em">l</tspan>
-        <tspan x="77.8" y="0" letter-spacing="0">-seare</tspan>
-        <tspan x="182.8" y="0" letter-spacing="-.01em">d</tspan>
-        <tspan x="201.9" y="0">,</tspan>
-        <tspan x="0" y="57.6">Perfect</tspan>
-        <tspan x="125.1" y="57.6" letter-spacing="-.06em">l</tspan>
-        <tspan x="138.4" y="57.6">y cooked</tspan>
+        Grill-seared,
+        <tspan x="0" y="57.6">Perfectly cooked</tspan>
         <tspan x="0" y="115.2">Burger</tspan>
       </text>
       <text
@@ -218,48 +212,57 @@
       <path class="cls-10" d="M234.4 326L341.6 326" />
       <path class="cls-10" d="M234.9 326L234.9 232.8" />
       <path class="cls-10" d="M155.3 232.8L234.9 232.8" />
-      <image
-        width="500"
-        height="143"
-        transform="matrix(.62 0 0 .62 298.2 551.2)"
-        xlink:href="https://assets.codepen.io/28963/burger-7.png"
-      />
-      <image
-        width="500"
-        height="213"
-        transform="matrix(.62 0 0 .62 312.5 460.3)"
-        xlink:href="https://assets.codepen.io/28963/burger-6.png"
-      />
-      <image
-        width="500"
-        height="179"
-        transform="matrix(.62 0 0 .62 309.5 369.2)"
-        xlink:href="https://assets.codepen.io/28963/burger-5.png"
-      />
-      <image
-        width="500"
-        height="205"
-        transform="matrix(.61 0 0 .61 311.9 262.2)"
-        xlink:href="https://assets.codepen.io/28963/burger-4.png"
-      />
-      <image
-        width="500"
-        height="166"
-        transform="matrix(.61 0 0 .61 313.2 190.1)"
-        xlink:href="https://assets.codepen.io/28963/burger-3.png"
-      />
-      <image
-        width="500"
-        height="283"
-        transform="matrix(.62 0 0 .62 312.5 85.8)"
-        xlink:href="https://assets.codepen.io/28963/burger-2.png"
-      />
-      <image
-        width="500"
-        height="219"
-        transform="translate(309.9) scale(.61)"
-        xlink:href="https://assets.codepen.io/28963/burger-1.png"
-      />
+      <g class="burgerimg">
+        <image
+          class="b7"
+          width="500"
+          height="143"
+          transform="matrix(.62 0 0 .62 298.2 551.2)"
+          xlink:href="https://assets.codepen.io/28963/burger-7.png"
+        />
+        <image
+          class="b6"
+          width="500"
+          height="213"
+          transform="matrix(.62 0 0 .62 312.5 460.3)"
+          xlink:href="https://assets.codepen.io/28963/burger-6.png"
+        />
+        <image
+          class="b5"
+          width="500"
+          height="179"
+          transform="matrix(.62 0 0 .62 309.5 369.2)"
+          xlink:href="https://assets.codepen.io/28963/burger-5.png"
+        />
+        <image
+          class="b4"
+          width="500"
+          height="205"
+          transform="matrix(.61 0 0 .61 311.9 262.2)"
+          xlink:href="https://assets.codepen.io/28963/burger-4.png"
+        />
+        <image
+          class="b3"
+          width="500"
+          height="166"
+          transform="matrix(.61 0 0 .61 313.2 190.1)"
+          xlink:href="https://assets.codepen.io/28963/burger-3.png"
+        />
+        <image
+          class="b2"
+          width="500"
+          height="283"
+          transform="matrix(.62 0 0 .62 312.5 85.8)"
+          xlink:href="https://assets.codepen.io/28963/burger-2.png"
+        />
+        <image
+          class="b1"
+          width="500"
+          height="219"
+          transform="translate(309.9) scale(.61)"
+          xlink:href="https://assets.codepen.io/28963/burger-1.png"
+        />
+      </g>
     </svg>
   </div>
 </template>
@@ -270,75 +273,80 @@ import gsap from 'gsap';
 export default {
   methods: {
     burgerIntro() {
-      // gsap
-      //   .timeline({
-      //     defaults: {
-      //       ease: 'bounce.out',
-      //       duration: 1.5,
-      //       delay: 0.5,
-      //     },
-      //   })
-      //   .add('start')
-      //   .from(
-      //     '.burger img:nth-child(7)',
-      //     {
-      //       rotation: -10,
-      //       y: -10,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(6)',
-      //     {
-      //       rotation: -15,
-      //       y: -45,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(5)',
-      //     {
-      //       rotation: -10,
-      //       x: 10,
-      //       y: -120,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(4)',
-      //     {
-      //       rotation: -5,
-      //       x: -10,
-      //       y: -150,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(3)',
-      //     {
-      //       rotation: 5,
-      //       y: -200,
-      //       opacity: 0.8,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(2)',
-      //     {
-      //       rotation: 5,
-      //       y: -250,
-      //     },
-      //     'start',
-      //   )
-      //   .from(
-      //     '.burger img:nth-child(1)',
-      //     {
-      //       rotation: 5,
-      //       opacity: 0.8,
-      //       y: -300,
-      //     },
-      //     'start',
-      //   );
+      gsap.set('.burgerimg image', {
+        svgOrigin: '500 305',
+        transformOrigin: '50% 50%',
+      });
+
+      gsap
+        .timeline({
+          defaults: {
+            ease: 'elastic.out(1, 0.75)',
+            duration: 1.5,
+            delay: 2,
+          },
+        })
+        .add('start')
+        .from(
+          '.b1',
+          {
+            rotation: -10,
+            y: 150,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b2',
+          {
+            rotation: 10,
+            y: 180,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b3',
+          {
+            rotation: 5,
+            y: 240,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b4',
+          {
+            rotation: 5,
+            y: 260,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b5',
+          {
+            y: 270,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b6',
+          {
+            y: 290,
+            scale: 0.5,
+          },
+          'start',
+        )
+        .from(
+          '.b7',
+          {
+            rotation: -10,
+            y: 310,
+          },
+          'start',
+        );
     },
   },
   mounted() {
@@ -351,7 +359,7 @@ export default {
 .burger-container {
   position: relative;
   width: 100%;
-  padding: 3vh 3vw;
+  padding: 6vh 3vw;
   background: linear-gradient(
     179deg,
     #000 0%,
