@@ -22,12 +22,13 @@
         </label>
       </form>
     </PageHeader>
+
     <section v-if="currentBurger === 'smash'" class="burger-display">
       <h2>The Smashburger</h2>
       <SmashBurger />
     </section>
 
-    <section v-if="currentBurger === 'sousvide'" class="burger-display">
+    <section v-else class="burger-display">
       <h2>The Sous Vide Burger</h2>
       <SousVideBurger />
     </section>

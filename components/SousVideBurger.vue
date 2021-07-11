@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SoueVideBurgerDiagram />
+    <SousVideBurgerDiagram />
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quia
       itaque blanditiis numquam provident omnis reprehenderit, doloribus nulla
