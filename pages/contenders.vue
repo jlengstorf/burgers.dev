@@ -62,19 +62,19 @@ export default {
         sarah: {
           jason: {
             bio: `
-            Jason Lengstorf, a.k.a. smooshburgerboi, is a doodie head and his beard sucks.
+            Jason Lengstorf, a.k.a. smooshburgerboi, is a doodie head. Jason thinks of himself as fancy.
           `,
             image: '/images/jason-by-sarah.jpg',
             imageAlt:
-              'Jason Lengstorf with an apron and a winning smile. A speech bubble for him says, “I eat burgers for breakfast. Literally.”',
+              'Jason Lengstorf with scribbles on his face with a mustache and devil horns',
           },
           sarah: {
             bio: `
-            Sarah Drasner knows the power of the meat bath. All hail the meat bath!
+            Sarah Drasner doesn't need to say much here, because her burgers are better.
           `,
-            image: '/images/sarah-by-sarah.jpg',
+            image: '/images/sarah-by-sarah.jpeg',
             imageAlt:
-              'Sarah Drasner holding her hand up with fingers close together signifying something small. A speech bubble for her says, “This is how big my chances of winning are.”',
+              'A burger with a crown on it, signifying queen of burgers',
           },
         },
       },
