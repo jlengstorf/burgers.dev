@@ -8,7 +8,8 @@
     <footer>
       <p>
         built with <span role="img" aria-label="burger">🍔</span> by
-        <a href="https://jason.af">Jason Lengstorf</a> ·
+        <a href="https://jason.af">Jason Lengstorf</a> and
+        <a href="https://twitter.com/sarah_edo">Sarah Drasner</a> ·
         <a href="https://github.com/jlengstorf/burgers.dev">source code</a> ·
         <a href="https://twitter.com/sarah_edo/status/1197721256100909056"
           >Sarah started it</a
@@ -24,88 +25,6 @@ export default {
     return {
       home: this.home,
     };
-  },
-  head: {
-    title: 'Burger Showdown: Splash vs. Smash',
-    htmlAttrs: {
-      lang: 'en',
-    },
-    link: [
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bangers&display=swap',
-      },
-      {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/apple-touch-icon.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png',
-      },
-      {
-        rel: 'manifest',
-        href: '/site.webmanifest',
-      },
-      {
-        rel: 'mask-icon',
-        href: '/safari-pinned-tab.svg',
-        color: '#ffb905',
-      },
-    ],
-    meta: [
-      {
-        name: 'msapplication-TileColor',
-        content: '#ffb905',
-      },
-      {
-        name: 'theme-color',
-        content: '#ffb905',
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      {
-        name: 'twitter:creator',
-        content: '@jlengstorf',
-      },
-      {
-        name: 'twitter:creator',
-        content: '@sdras',
-      },
-      {
-        name: 'og:title',
-        content: 'Burger Showdown: Splash vs. Smash',
-      },
-      {
-        name: 'og:description',
-        content:
-          'Sarah Drasner & Jason Lengstorf face off in an epic excuse to feed their friends lots of burgers while talking shit to each other.',
-      },
-      {
-        name: 'og:image',
-        content: 'https://www.burgers.dev/images/social-card.jpg',
-      },
-      {
-        name: 'og:image:alt',
-        content:
-          'A burger with crossed spatulas below it and the text, "Who will be the burger champ, and who will the burger chump?"',
-      },
-    ],
   },
 };
 </script>
