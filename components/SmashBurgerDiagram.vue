@@ -343,7 +343,6 @@
 
 @media (min-width: 600px) {
   .responsive-container {
-    --width: min(100vw, 1000px);
     margin-left: calc((var(--width) - (500px + 4rem)) / 2 * -1);
     margin-right: calc((var(--width) - (500px + 4rem)) / 2 * -1);
     width: var(--width);

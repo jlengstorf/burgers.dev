@@ -19,6 +19,10 @@ export default {
         href: 'https://fonts.googleapis.com/css2?family=Bangers&display=swap',
       },
       {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
+      },
+      {
         rel: 'apple-touch-icon',
         sizes: '180x180',
         href: '/apple-touch-icon.png',
