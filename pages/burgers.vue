@@ -3,23 +3,18 @@
     <PageHeader title="The Burgers">
       <form>
         <label :class="currentBurger === 'smash' && 'active'" for="smash">
-          <input
-            v-model="currentBurger"
-            value="smash"
-            type="radio"
-            id="smash"
-          />
           Smashburger
         </label>
+        <input v-model="currentBurger" value="smash" type="radio" id="smash" />
         <label :class="currentBurger === 'sousvide' && 'active'" for="sousvide">
-          <input
-            v-model="currentBurger"
-            value="sousvide"
-            type="radio"
-            id="sousvide"
-          />
           Sous Vide Burger
         </label>
+        <input
+          v-model="currentBurger"
+          value="sousvide"
+          type="radio"
+          id="sousvide"
+        />
       </form>
     </PageHeader>
 
