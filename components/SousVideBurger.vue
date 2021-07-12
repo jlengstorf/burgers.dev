@@ -10,10 +10,9 @@
       </p>
       <p>
         Grilling hamburgers, especially thick juicy ones, are trickier than
-        grilling a steak. Burgers can fall apart, with a charred outside and
-        stay raw in the middle. This method slowly and precisely cooks so that
-        it reaches the exact optimum temperature and comes out flawless every
-        time.
+        grilling a steak. Burgers can fall apart, with a charred outside yet raw
+        in the middle. This method slowly and precisely cooks so that it reaches
+        the exact optimum temperature and comes out flawless every time.
       </p>
       <p>
         The sous vide hamburger recipe produces a mouthwatering luscious burger,

@@ -236,49 +236,49 @@
           width="500"
           height="143"
           transform="matrix(.62 0 0 .62 298.2 551.2)"
-          xlink:href="https://assets.codepen.io/28963/burger-7.png"
+          xlink:href="/images/burger-7.png"
         />
         <image
           class="b6"
           width="500"
           height="213"
           transform="matrix(.62 0 0 .62 312.5 460.3)"
-          xlink:href="https://assets.codepen.io/28963/burger-6.png"
+          xlink:href="/images/burger-6.png"
         />
         <image
           class="b5"
           width="500"
           height="179"
           transform="matrix(.62 0 0 .62 309.5 369.2)"
-          xlink:href="https://assets.codepen.io/28963/burger-5.png"
+          xlink:href="/images/burger-5.png"
         />
         <image
           class="b4"
           width="500"
           height="205"
           transform="matrix(.61 0 0 .61 311.9 262.2)"
-          xlink:href="https://assets.codepen.io/28963/burger-4.png"
+          xlink:href="/images/burger-4.png"
         />
         <image
           class="b3"
           width="500"
           height="166"
           transform="matrix(.61 0 0 .61 313.2 190.1)"
-          xlink:href="https://assets.codepen.io/28963/burger-3.png"
+          xlink:href="/images/burger-3.png"
         />
         <image
           class="b2"
           width="500"
           height="283"
           transform="matrix(.62 0 0 .62 312.5 85.8)"
-          xlink:href="https://assets.codepen.io/28963/burger-2.png"
+          xlink:href="/images/burger-2.png"
         />
         <image
           class="b1"
           width="500"
           height="219"
           transform="translate(309.9) scale(.61)"
-          xlink:href="https://assets.codepen.io/28963/burger-1.png"
+          xlink:href="/images/burger-1.png"
         />
       </g>
     </svg>
@@ -411,11 +411,10 @@ export default {
         .from(
           '.burgerlabel',
           {
-            duration: 2,
             scale: 0.9,
             ease: 'sine',
           },
-          'start+=1.8',
+          'start+=1.6',
         );
     },
   },
