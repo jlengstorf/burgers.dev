@@ -2,49 +2,41 @@
   <div>
     <PageHeader title="The Burgers">
       <form>
-        <label :class="currentBurger === 'smash' && 'active'">
-          <input
-            type="radio"
-            name="burger"
-            :checked="currentBurger === 'smash'"
-            @change="toggleBurger"
-          />
+        <label :class="currentBurger === 'smash' && 'active'" for="smash">
           Smashburger
         </label>
-        <label :class="currentBurger === 'splash' && 'active'">
-          <input
-            type="radio"
-            name="burger"
-            :checked="currentBurger === 'splash'"
-            @change="toggleBurger"
-          />
-          Splashburger
+        <input v-model="currentBurger" value="smash" type="radio" id="smash" />
+        <label :class="currentBurger === 'sousvide' && 'active'" for="sousvide">
+          Sous Vide Burger
         </label>
+        <input
+          v-model="currentBurger"
+          value="sousvide"
+          type="radio"
+          id="sousvide"
+        />
       </form>
     </PageHeader>
+
     <section v-if="currentBurger === 'smash'" class="burger-display">
       <h2>The Smashburger</h2>
       <SmashBurger />
     </section>
 
-    <section v-if="currentBurger === 'splash'" class="burger-display">
-      <h2>The Splashburger</h2>
-      <SplashBurger />
+    <section v-else class="burger-display">
+      <h2>The Sous Vide Burger</h2>
+      <SousVideBurger />
     </section>
   </div>
 </template>
 
 <script>
 export default {
+  layout: 'burgers',
   data() {
     return {
       currentBurger: 'smash',
     };
-  },
-  methods: {
-    toggleBurger() {
-      this.currentBurger = this.currentBurger === 'smash' ? 'splash' : 'smash';
-    },
   },
 };
 </script>
