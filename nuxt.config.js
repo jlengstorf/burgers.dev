@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Burger Showdown: Splash vs. Smash',
+    title: 'Burger Showdown: Sous Vide vs. Smash',
     htmlAttrs: {
       lang: 'en',
     },
