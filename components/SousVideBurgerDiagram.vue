@@ -1,6 +1,12 @@
 <template>
   <div class="burger-container">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 1006.8 690">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 -30 1006.8 690"
+      aria-labelledby="burgertitle"
+      role="presentation"
+    >
+      <title id="burgertitle">Diagram of pieces of a burger</title>
       <g class="burgerlabel">
         <text
           transform="translate(0 142.3)"
@@ -301,7 +307,7 @@ export default {
       });
     },
     burgerIntro() {
-      gsap.set('.burgerimg image', {
+      gsap.set('.burgerimg image, .letters g, .burgerlabel', {
         transformOrigin: '50% 50%',
       });
 

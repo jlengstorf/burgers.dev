@@ -39,18 +39,6 @@ body * + * {
   margin-top: 1rem;
 }
 
-main {
-  margin: 2rem auto;
-  max-width: calc(500px + 4rem);
-  width: 90vw;
-}
-
-@media (min-width: 800px) {
-  main {
-    margin-top: 5rem;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -69,5 +57,19 @@ a {
 a:hover,
 a:focus {
   color: #ffd600;
+}
+</style>
+
+<style scoped>
+main {
+  margin: 2rem auto;
+  max-width: calc(500px + 4rem);
+  width: 90vw;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin-top: 5rem;
+  }
 }
 </style>
