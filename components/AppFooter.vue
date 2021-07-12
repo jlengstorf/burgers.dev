@@ -2,7 +2,7 @@
   <footer>
     <p>
       built with <span role="img" aria-label="burger">🍔</span> by
-      <a href="https://jason.af">Jason Lengstorf</a> and
+      <a href="https://twitter.com/jlengstorf">Jason Lengstorf</a> and
       <a href="https://twitter.com/sarah_edo">Sarah Drasner</a> ·
       <a href="https://github.com/jlengstorf/burgers.dev">source code</a> ·
       <a href="https://twitter.com/sarah_edo/status/1197721256100909056"
