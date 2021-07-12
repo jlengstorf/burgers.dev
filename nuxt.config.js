@@ -75,7 +75,7 @@ export default {
       },
       {
         name: 'og:title',
-        content: 'Burger Showdown: Splash vs. Smash',
+        content: 'Burger Showdown: Sous Vide vs. Smash',
       },
       {
         name: 'og:description',
